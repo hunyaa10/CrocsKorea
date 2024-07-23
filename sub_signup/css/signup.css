@@ -567,12 +567,13 @@ footer .note {
   header .header_menu ul {
     display: none;
   }
-  header button {
-    opacity: 1;
+  header .menu_btn_box,
+  header .login_btn_box {
+    display: flex;
   }
-  header .menu-white,
-  header .login-white {
-    display: block;
+  header .menu_btn_box .menu-black,
+  header .login_btn_box .login-black {
+    display: none;
   }
   /* //header */
 
