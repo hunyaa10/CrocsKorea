@@ -59,8 +59,8 @@ header .header_menu ul li:hover {
 header .header_menu h1 .logo-black {
   display: none;
 }
-header button {
-  opacity: 0;
+header .menu_btn_box,
+header .login_btn_box {
   display: none;
 }
 /* //header */
