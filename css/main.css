@@ -63,9 +63,8 @@ header .header_menu ul li:hover {
 header .header_menu h1 .logo-black {
   display: none;
 }
-header .menu_btn,
-header .login_btn {
-  opacity: 0;
+header .menu_btn_box,
+header .login_btn_box {
   display: none;
 }
 /* //header */
@@ -1122,13 +1121,13 @@ footer .note {
   header .header_menu ul {
     display: none;
   }
-  header .menu_btn,
-  header .login_btn {
-    opacity: 1;
+  header .menu_btn_box,
+  header .login_btn_box {
+    display: flex;
   }
-  header .menu-white,
-  header .login-white {
-    display: block;
+  header .menu_btn_box .menu-black,
+  header .login_btn_box .login-black {
+    display: none;
   }
   /* //header */
 
