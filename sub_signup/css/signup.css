@@ -695,7 +695,10 @@ footer .note {
     margin-left: 0;
   }
   #contents form .agree .agree-checkbox #check {
+    margin-top: 0.5rem;
     margin-right: 0.5rem;
+    width: 16px;
+    height: 16px;
   }
   /* //section */
 
