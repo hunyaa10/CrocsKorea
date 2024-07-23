@@ -652,6 +652,14 @@ footer .note {
   /* //footer */
 }
 
+@media screen and (max-width: 500px) {
+  #contents form .agree .agree-checkbox #check {
+    margin: 0.5rem 0.5rem 0 0;
+    width: 16px;
+    height: 16px;
+  }
+}
+
 @media screen and (max-width: 450px) {
   header .header_menu h1 {
     width: 40%;
@@ -693,12 +701,6 @@ footer .note {
   #contents form .databox .data input {
     display: block;
     margin-left: 0;
-  }
-  #contents form .agree .agree-checkbox #check {
-    margin-top: 0.5rem;
-    margin-right: 0.5rem;
-    width: 16px;
-    height: 16px;
   }
   /* //section */
 
