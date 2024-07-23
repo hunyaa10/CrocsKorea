@@ -63,7 +63,8 @@ header .header_menu ul li:hover {
 header .header_menu h1 .logo-black {
   display: none;
 }
-header button {
+header .menu_btn,
+header .login_btn {
   opacity: 0;
   display: none;
 }
@@ -1121,7 +1122,8 @@ footer .note {
   header .header_menu ul {
     display: none;
   }
-  header button {
+  header .menu_btn,
+  header .login_btn {
     opacity: 1;
   }
   header .menu-white,
