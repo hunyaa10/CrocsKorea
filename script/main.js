@@ -209,12 +209,6 @@ $(function () {
     });
   }
 
-  // function windowResize() {
-  //   $(window).resize(function () {
-  //     document.location.reload();
-  //   });
-  // }
-
   function hoverAction() {
     if (windowWidth > 1200) {
       sec02_hoverEvent();
@@ -223,6 +217,16 @@ $(function () {
     }
   }
   hoverAction();
+
+  // 위도우창크기 변화 시 새로고침
+  function windowResize() {
+    $(window).resize(function () {
+      document.location.reload();
+    });
+  }
+  if (windowWidth > 450) {
+    windowResize();
+  }
 
   // sec02 숫자 or 화살표 클릭 시 아이템 슬라이드
   var slide = 2;
