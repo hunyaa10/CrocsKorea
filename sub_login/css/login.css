@@ -64,7 +64,7 @@ main button {
   background-color: var(--main-color);
   border-radius: 10px;
   font-family: "Ssurround";
-  font-size: 28px;
+  font-size: 24px;
   color: #fff;
   text-align: center;
   letter-spacing: 2px;
@@ -103,25 +103,31 @@ footer .bottom a {
 
 /* /////////////////////////////////////// */
 @media screen and (max-width: 1440px) {
+  #loginbox {
+    width: 30%;
+  }
   header h1 {
     width: 200px;
   }
   main {
-    font-size: 16px;
+    font-size: 14px;
   }
   main input {
     height: 40px;
     font-size: 16px;
   }
   main button {
-    height: 60px;
-    font-size: 20px;
+    height: 50px;
+    font-size: 16px;
   }
   main .find_box {
     font-size: 14px;
   }
   footer .terms {
     font-size: 12px;
+  }
+  footer .bottom h2 {
+    width: 80px;
   }
   footer .bottom a {
     font-size: 16px;
@@ -137,31 +143,37 @@ footer .bottom a {
     width: 60%;
   }
   footer .bottom h2 {
-    width: 80px;
+    width: 60px;
+  }
+  footer .bottom a {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 575px) {
   body {
-    padding: 0 56px;
+    padding: 0 88px;
   }
   #loginbox {
     width: 100%;
   }
-  main button {
-    font-size: 18px;
+  main {
+    padding: 24px;
   }
 }
 @media screen and (max-width: 450px) {
   body {
-    padding: 32px;
-  }
-  #loginbox {
-    width: 100%;
+    padding: 24px;
   }
   header h1 {
     width: 150px;
   }
   main {
     padding: 40px 16px;
+  }
+  main label {
+    margin-bottom: 0.5rem;
+  }
+  main button {
+    margin: 2rem 0;
   }
 }
