@@ -1169,7 +1169,8 @@ footer .note {
     right: 1rem;
   }
   #banner .banner_text h2 {
-    float: inline-start;
+    display: inline;
+    /* float: inline-start; */
     writing-mode: vertical-rl;
     line-height: 1;
     text-transform: uppercase;
@@ -1179,7 +1180,6 @@ footer .note {
     opacity: 0.2;
   }
   #banner .banner_text .text1 {
-    margin-top: 150px;
   }
   /* //banner */
 
