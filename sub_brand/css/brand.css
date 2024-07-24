@@ -1,0 +1,609 @@
+@import url(./reset.css);
+
+@font-face {
+  font-family: "SsurroundAir";
+  src: url(../font/Cafe24SsurroundAir-v1.1.ttf);
+}
+@font-face {
+  font-family: "Ssurround";
+  src: url(../font/Cafe24Ssurround-v2.0.ttf);
+}
+@font-face {
+  font-family: "TitanOne";
+  src: url(../font/TitanOne-Regular.ttf);
+}
+
+:root {
+  --main-color: #7fb700;
+}
+
+body {
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  padding: 0 88px;
+  opacity: 0.9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+}
+header .header_menu {
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .header_menu ul {
+  display: flex;
+}
+header .header_menu ul li {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+header .header_menu ul li:nth-child(2) {
+  margin: 0 2rem;
+}
+header .header_menu ul li:hover {
+  opacity: 0.7;
+}
+header .header_menu h1 .logo-black {
+  display: none;
+}
+header .menu_btn_box,
+header .login_btn_box {
+  display: none;
+}
+/* //header */
+
+menu {
+  height: 100vh;
+  padding-left: 40px;
+  position: absolute;
+  z-index: 9;
+}
+menu .main_menu {
+  height: fit-content;
+  position: relative;
+  top: 30%;
+}
+menu .main_menu .main {
+  font-family: "Ssurround";
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+menu .main_menu .main:not(:first-child) {
+  margin-top: 1rem;
+}
+menu .main_menu .main:hover {
+  opacity: 0.7;
+}
+menu .sub {
+  display: none;
+}
+menu .sub li {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+menu .sub li:hover {
+  background-color: #d0d9bb43;
+}
+menu .closebtn {
+  display: none;
+}
+/* //menu */
+
+#banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/bg_header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 8;
+}
+#banner .banner_text {
+  display: none;
+}
+/* //banner */
+
+section {
+  width: 100%;
+  padding: 200px 88px;
+}
+section .brandbox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .brandbox:not(:first-child) {
+  margin-top: 7%;
+}
+section .brandbox .text {
+  width: 50%;
+}
+section .brandbox .text h3 {
+  margin-bottom: 1rem;
+  font-family: "Ssurround";
+  font-size: 24px;
+}
+section .brandbox .text p {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+section .brandbox .left {
+  margin-right: 5%;
+}
+section .brandbox .right {
+  margin-left: 5%;
+}
+/* //section */
+
+footer {
+  width: 100%;
+  padding: 80px 88px;
+  border-top: 1px solid #7fb700;
+  letter-spacing: 1px;
+}
+footer .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .top h2 {
+  width: 100px;
+}
+footer .top .terms {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+footer .top .sns {
+  display: flex;
+}
+footer .top .sns a:not(:last-child) {
+  margin-right: 2rem;
+}
+footer .textbox {
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .textbox .text span {
+  margin-right: 1rem;
+  font-size: 14px;
+}
+footer .textbox .text .cus {
+  display: flex;
+  align-items: center;
+}
+footer .textbox .text .cus .tel {
+  font-family: "Ssurround";
+  font-size: 28px;
+}
+footer .textbox .text .time {
+  display: flex;
+}
+footer .textbox .text .time span {
+  padding-top: 2px;
+}
+footer .textbox .text .text1 {
+  margin-bottom: 30px;
+}
+footer .textbox .text .text2 .text_i {
+  display: flex;
+  align-items: end;
+}
+footer .note {
+  font-family: "Ssurround";
+  font-size: 20px;
+  text-align: center;
+}
+/* //footer */
+
+.topbtn {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  opacity: 0.2;
+  display: none;
+  z-index: 999;
+}
+
+/* /////////////////////////////////////////// */
+@media screen and (max-width: 1440px) {
+  header {
+    padding: 0 56px;
+  }
+  header .header_menu h1 {
+    width: 80%;
+  }
+  header .header_menu ul li {
+    font-size: 16px;
+  }
+  /* //header */
+
+  menu .main_menu .main {
+    font-size: 18px;
+  }
+  menu .sub li {
+    font-size: 16px;
+  }
+  /* //menu */
+
+  section {
+    padding: 150px 88px;
+  }
+  section .brandbox .text {
+    width: 70%;
+  }
+  section .brandbox .text h3 {
+    font-size: 18px;
+  }
+  section .brandbox .text p {
+    font-size: 14px;
+  }
+  /* //section */
+
+  footer .top .terms {
+    font-size: 16px;
+  }
+  footer .top .sns a:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+  footer .textbox .text {
+    font-size: 14px;
+  }
+  footer .textbox .text span {
+    font-size: 12px;
+  }
+  footer .textbox .text .cus .tel {
+    font-size: 24px;
+  }
+  footer .note {
+    font-size: 18px;
+  }
+  /* //footer */
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 0 16px;
+  }
+  header .header_menu ul li {
+    font-size: 14px;
+  }
+  header .header_menu ul li:hover {
+    opacity: 1;
+  }
+  /* //header */
+
+  menu {
+    padding-left: 16px;
+  }
+  menu .main_menu .main:hover {
+    opacity: 1;
+  }
+  menu .sub li:not(:first-child) {
+    margin-top: 0.5rem;
+  }
+  /* //menu */
+
+  section {
+    padding: 100px 40px;
+  }
+  section .brandbox .text {
+    width: 85%;
+  }
+  section .brandbox .text h3 {
+    font-size: 16px;
+  }
+  section .brandbox .text p {
+    font-size: 14px;
+  }
+  section .brandbox .left {
+    margin-right: 2rem;
+  }
+  section .brandbox .right {
+    margin-left: 2rem;
+  }
+  /* //section */
+
+  footer {
+    padding: 40px;
+  }
+  footer .top h2 {
+    width: 80px;
+  }
+  footer .top .terms {
+    width: 50%;
+  }
+  footer .top .sns img {
+    width: 24px;
+  }
+  footer .top .sns a:not(:last-child) {
+    margin-right: 1rem;
+  }
+  footer .textbox .text .time span {
+    padding-top: 0;
+  }
+  footer .textbox .text .cus .tel {
+    font-size: 20px;
+  }
+  footer .note {
+    font-size: 16px;
+  }
+  /* //footer */
+
+  .topbtn {
+    right: 16px;
+    bottom: 16px;
+  }
+  /* //topbtn */
+}
+
+@media screen and (max-width: 991px) {
+  menu {
+    padding: 0 16px;
+    background-color: #00000070;
+  }
+  /* //menu */
+
+  section .brandbox {
+    flex-direction: column;
+    justify-content: center;
+  }
+  section .brandbox .text {
+    width: 100%;
+    order: 2;
+  }
+  section .brandbox .text h3 {
+    text-align: center;
+  }
+  section .brandbox figure {
+    width: 60%;
+    margin-bottom: 5%;
+    order: 1;
+  }
+  section .brandbox .left {
+    margin-right: 0;
+  }
+  section .brandbox .right {
+    margin-left: 0;
+  }
+  /* //section */
+}
+
+@media screen and (max-width: 768px) {
+  menu .main_menu .main {
+    font-size: 16px;
+  }
+  menu .sub li {
+    font-size: 14px;
+  }
+  /* //menu */
+
+  footer {
+    padding: 32px;
+  }
+  footer .top {
+    flex-direction: column;
+  }
+  footer .top h2 {
+    order: 1;
+  }
+  footer .top .terms {
+    order: 3;
+    width: 100%;
+  }
+  footer .top .sns {
+    order: 2;
+    margin: 2rem 0;
+  }
+  footer .textbox {
+    margin: 2rem 0;
+    flex-direction: column;
+  }
+  footer .textbox .text:first-child {
+    margin-bottom: 1.5rem;
+  }
+  footer .textbox .text .text1 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  footer .textbox .text .cus {
+    justify-content: center;
+  }
+  footer .textbox .text .text2 .text_i {
+    justify-content: center;
+  }
+  /* //footer */
+}
+
+@media screen and (max-width: 575px) {
+  header {
+    height: fit-content;
+    padding: 16px;
+  }
+  header .header_menu h1 {
+    width: 60%;
+  }
+  header .header_menu ul {
+    display: none;
+  }
+  header .menu_btn_box,
+  header .login_btn_box {
+    display: flex;
+  }
+  header .menu_btn_box .menu-black,
+  header .login_btn_box .login-black {
+    display: none;
+  }
+  /* //header */
+
+  menu {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    left: -100%;
+  }
+  menu .main_menu {
+    top: 25%;
+  }
+  menu .closebtn {
+    display: block;
+    padding: 1% 2%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "SsurroundAir";
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  /* //menu */
+
+  #banner {
+    overflow: hidden;
+  }
+  #banner .banner_text {
+    display: block;
+    width: 200vw;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 20%;
+    left: -35%;
+  }
+  #banner .banner_text h2 {
+    width: fit-content;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: "TitanOne";
+    font-size: 18vw;
+    color: #fff;
+    opacity: 0.2;
+  }
+  #banner .banner_text .text2 {
+    margin-left: 50px;
+  }
+  #banner .banner_text .text3 {
+    margin-left: 100px;
+  }
+  /* //banner */
+
+  section {
+    padding: 100px 16px;
+  }
+  section .brandbox figure {
+    width: 70%;
+  }
+  /* //section */
+
+  footer .top .sns {
+    margin: 1rem 0;
+  }
+  footer .top .terms {
+    font-size: 14px;
+  }
+  footer .textbox .text span {
+    margin-right: 0.5rem;
+  }
+  footer .textbox .text .cus .tel {
+    font-size: 18px;
+  }
+  /* //footer */
+}
+
+@media screen and (max-width: 450px) {
+  header .header_menu h1 {
+    width: 40%;
+  }
+  /* //header */
+
+  menu .main_menu {
+    top: 15%;
+  }
+  menu .sub li {
+    font-size: 16px;
+  }
+  /* //menu */
+
+  #banner .banner_text {
+    top: 35%;
+  }
+  #banner .banner_text h2 {
+    font-size: 22vw;
+  }
+  /* //banner */
+
+  section .brandbox:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+  section .brandbox figure {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  section .brandbox .text h3 {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+  }
+  section .brandbox .text p {
+    font-size: 16px;
+  }
+  /* //section */
+
+  footer {
+    padding: 32px 16px;
+  }
+  footer .textbox {
+    margin: 1rem 0;
+  }
+  footer .textbox .text:first-child {
+    margin-bottom: 1rem;
+  }
+  footer .textbox .text .text1 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  footer .note {
+    font-size: 12px;
+  }
+  /* //footer */
+}
+
+@media screen and (max-width: 375px) {
+  menu .main_menu .main:not(:first-child) {
+    margin-top: 0.5rem;
+  }
+  /* //menu */
+
+  #banner .banner_text {
+    top: 24%;
+    left: -33%;
+  }
+  #banner .banner_text h2 {
+    font-size: 19vw;
+  }
+  /* //banner */
+}
