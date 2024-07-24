@@ -505,9 +505,14 @@ footer .note {
     color: #fff;
     opacity: 0.2;
   }
-  #banner .banner_text .text1 {
+  #banner .banner_text .text3 {
+    margin-bottom: 400px;
   }
   #banner .banner_text .text2 {
+    margin-bottom: 180px;
+  }
+  #banner .banner_text .text1 {
+    margin-top: 100px;
   }
   /* //banner */
 
