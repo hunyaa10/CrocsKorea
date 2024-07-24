@@ -1169,17 +1169,13 @@ footer .note {
     right: 1rem;
   }
   #banner .banner_text h2 {
-    display: inline;
-    /* float: inline-start; */
     writing-mode: vertical-rl;
     line-height: 1;
     text-transform: uppercase;
     font-family: "TitanOne";
-    font-size: 20vw;
+    font-size: 19vw;
     color: #fff;
     opacity: 0.2;
-  }
-  #banner .banner_text .text1 {
   }
   /* //banner */
 
