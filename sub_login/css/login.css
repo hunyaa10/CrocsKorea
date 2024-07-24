@@ -18,7 +18,7 @@ body {
 }
 
 #loginbox {
-  width: 40%;
+  width: 35%;
   position: relative;
   top: 50%;
   left: 50%;
@@ -32,6 +32,8 @@ header h1 {
   width: fit-content;
   margin: auto;
 }
+/* //header */
+
 main {
   width: 100%;
   padding: 40px;
@@ -72,6 +74,8 @@ main .find_box {
   display: flex;
   justify-content: space-around;
 }
+/* //main */
+
 footer {
   width: 100%;
 }
@@ -95,8 +99,9 @@ footer .bottom a {
   font-size: 18px;
   font-weight: 700;
 }
-/* ////////////////////////////// */
+/* //footer */
 
+/* /////////////////////////////////////// */
 @media screen and (max-width: 1440px) {
   header h1 {
     width: 200px;
@@ -124,20 +129,23 @@ footer .bottom a {
 }
 @media screen and (max-width: 1200px) {
   #loginbox {
-    width: 50%;
+    width: 40%;
   }
 }
 @media screen and (max-width: 767px) {
   #loginbox {
-    width: 70%;
+    width: 60%;
   }
   footer .bottom h2 {
     width: 80px;
   }
 }
 @media screen and (max-width: 575px) {
+  body {
+    padding: 0 56px;
+  }
   #loginbox {
-    width: 90%;
+    width: 100%;
   }
   main button {
     font-size: 18px;
@@ -145,10 +153,13 @@ footer .bottom a {
 }
 @media screen and (max-width: 450px) {
   body {
-    padding: 16px;
+    padding: 32px;
   }
   #loginbox {
     width: 100%;
+  }
+  header h1 {
+    width: 150px;
   }
   main {
     padding: 40px 16px;
