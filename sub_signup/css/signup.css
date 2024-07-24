@@ -687,8 +687,16 @@ footer .note {
     font-size: 14px;
     letter-spacing: 1px;
   }
+  #inform h2 span {
+    font-family: "SsurroundAir";
+  }
   #benefit {
     padding: 10% 16px;
+  }
+  #benefit .text span {
+    font-family: "SsurroundAir";
+    font-weight: 700;
+    color: #000;
   }
   #contents {
     padding: 15% 16px;
