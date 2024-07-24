@@ -168,12 +168,15 @@ footer .bottom a {
     width: 150px;
   }
   main {
-    padding: 40px 16px;
+    padding: 24px 16px;
   }
   main label {
     margin-bottom: 0.5rem;
   }
   main button {
     margin: 2rem 0;
+  }
+  main .find_box {
+    font-size: 12px;
   }
 }
