@@ -496,7 +496,7 @@ footer .note {
     right: 1rem;
   }
   #banner .banner_text h2 {
-    display: inline;
+    float: inline-start;
     writing-mode: vertical-rl;
     line-height: 1;
     text-transform: uppercase;
@@ -504,7 +504,6 @@ footer .note {
     font-size: 18vw;
     color: #fff;
     opacity: 0.2;
-    float: inline-start;
   }
   #banner .banner_text .text1 {
     margin-top: 100px;
