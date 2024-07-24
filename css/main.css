@@ -1165,17 +1165,17 @@ footer .note {
     transform: rotate(-90deg);
     position: relative;
     top: 50%;
-    left: 20%;
+    left: 25%;
   }
   #banner .banner_text h2 {
     line-height: 1;
     text-transform: uppercase;
     font-family: "TitanOne";
-    font-size: 25vw;
+    font-size: 20vw;
     color: #fff;
     opacity: 0.2;
   }
-  #banner .banner_text .text-k {
+  #banner .banner_text .text2 {
     margin-left: 100px;
   }
   /* //banner */
@@ -1338,10 +1338,7 @@ footer .note {
   /* //menu */
 
   #banner .banner_text {
-    top: 55%;
-  }
-  #banner .banner_text h2 {
-    font-size: 28vw;
+    top: 60%;
   }
   /* //banner */
 
@@ -1458,6 +1455,11 @@ footer .note {
     margin-top: 0.5rem;
   }
   /* //menu */
+
+  #banner .banner_text {
+    top: 50%;
+  }
+  /* //banner */
 
   #sub_banner .text .bigT {
     font-size: 16px;
