@@ -486,29 +486,31 @@ footer .note {
 
   #banner {
     overflow: hidden;
+    position: relative;
   }
   #banner .banner_text {
     display: block;
-    width: 200vw;
-    transform: rotate(-90deg);
-    position: relative;
-    top: 15%;
-    left: -35%;
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 5%;
+    right: 1rem;
   }
   #banner .banner_text h2 {
-    width: fit-content;
+    display: inline;
+    writing-mode: vertical-rl;
     line-height: 1;
     text-transform: uppercase;
     font-family: "TitanOne";
     font-size: 18vw;
     color: #fff;
     opacity: 0.2;
+    float: inline-start;
+  }
+  #banner .banner_text .text1 {
+    margin-top: 100px;
   }
   #banner .banner_text .text2 {
-    margin-left: 50px;
-  }
-  #banner .banner_text .text3 {
-    margin-left: 100px;
+    margin-top: 50px;
   }
   /* //banner */
 
@@ -548,14 +550,6 @@ footer .note {
     font-size: 16px;
   }
   /* //menu */
-
-  #banner .banner_text {
-    top: 30%;
-  }
-  #banner .banner_text h2 {
-    font-size: 22vw;
-  }
-  /* //banner */
 
   section .brandbox:not(:first-child) {
     margin-top: 2.5rem;
@@ -597,13 +591,4 @@ footer .note {
     margin-top: 0.5rem;
   }
   /* //menu */
-
-  #banner .banner_text {
-    top: 20%;
-    left: -33%;
-  }
-  #banner .banner_text h2 {
-    font-size: 19vw;
-  }
-  /* //banner */
 }
