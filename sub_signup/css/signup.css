@@ -156,7 +156,7 @@ menu .closebtn {
   padding: 5% 88px;
   background-color: #fafafa;
 }
-#contents form {
+#contents form .formbox {
   display: flex;
   justify-content: space-between;
 }
@@ -215,16 +215,19 @@ menu .closebtn {
   margin-right: 1rem;
   font-size: 18px;
 }
-#contents button {
+#contents form #signbtn {
+  display: block;
   margin: auto;
   margin-top: 5%;
   padding: 1.5rem 3rem;
+  border: none;
   border-radius: 10px;
   background-color: var(--main-color);
   font-family: "Ssurround";
   font-size: 18px;
   color: #fff;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 /* //section */
 
@@ -355,7 +358,7 @@ footer .note {
   #contents form .agree .agree-textbox .txt span {
     font-size: 16px;
   }
-  #contents button {
+  #contents form #signbtn {
     font-size: 16px;
   }
   /* //section */
@@ -416,7 +419,7 @@ footer .note {
   #contents {
     padding: 5% 40px;
   }
-  #contents form {
+  #contents form .formbox {
     flex-direction: column;
     align-items: center;
   }
@@ -430,7 +433,7 @@ footer .note {
     flex-direction: row;
     align-items: center;
   }
-  #contents button {
+  #contents form #signbtn {
     font-size: 14px;
   }
   /* //section */
@@ -514,7 +517,7 @@ footer .note {
   #contents form .agree .agree-textbox {
     padding-left: 2rem;
   }
-  #contents button {
+  #contents form #signbtn {
     margin-top: 10%;
   }
   /* //section */
@@ -632,8 +635,13 @@ footer .note {
     flex-direction: column;
     align-items: flex-start;
   }
-  #contents button {
+  #contents form #signbtn {
     padding: 1rem 2rem;
+  }
+  #contents form .agree .agree-checkbox #check {
+    margin: 0.5rem 0.5rem 0 0;
+    width: 16px;
+    height: 16px;
   }
   /* //section */
 
@@ -650,14 +658,6 @@ footer .note {
     font-size: 18px;
   }
   /* //footer */
-}
-
-@media screen and (max-width: 500px) {
-  #contents form .agree .agree-checkbox #check {
-    margin: 0.5rem 0.5rem 0 0;
-    width: 16px;
-    height: 16px;
-  }
 }
 
 @media screen and (max-width: 450px) {
