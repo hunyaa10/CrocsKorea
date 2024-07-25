@@ -127,11 +127,12 @@ menu .closebtn {
   height: 100px;
   padding: 0 88px;
   border-bottom: 1px solid var(--main-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
 }
 .sec_menu li {
+  width: fit-content;
   height: 100px;
   padding: 0 0.5rem;
   display: flex;
@@ -159,12 +160,14 @@ section {
 section .goodsbox {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 5%;
+  gap: 80px;
 }
 section .goodsbox .goods .text .name {
   display: block;
-  height: 50px;
+  height: 40px;
   font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.5;
 }
 section .goodsbox .goods .text .prise {
   display: flex;
@@ -172,6 +175,7 @@ section .goodsbox .goods .text .prise {
   align-items: center;
   font-size: 18px;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 section .goodsbox .goods .text .prise img {
   width: 20px;
@@ -281,6 +285,24 @@ footer .note {
   }
   /* //menu */
 
+  .sec_menu li {
+    font-size: 14px;
+    line-height: 2;
+  }
+  section {
+    padding: 150px 88px;
+  }
+  section .goodsbox {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  section .goodsbox .goods .text .name {
+    font-size: 14px;
+  }
+  section .goodsbox .goods .text .prise {
+    font-size: 16px;
+  }
+  /* //section */
+
   footer .top .terms {
     font-size: 16px;
   }
@@ -325,6 +347,14 @@ footer .note {
   }
   /* //menu */
 
+  .sec_menu {
+    padding: 0 40px;
+  }
+  section {
+    padding: 100px 40px;
+  }
+  /* //section */
+
   footer {
     padding: 40px;
   }
@@ -365,10 +395,10 @@ footer .note {
   }
   /* //menu */
 
-  #banner {
-    background-position: 20%;
+  section .goodsbox {
+    gap: 40px;
   }
-  /* //banner */
+  /* //section */
 }
 
 @media screen and (max-width: 768px) {
@@ -379,6 +409,26 @@ footer .note {
     font-size: 14px;
   }
   /* //menu */
+
+  #banner {
+    background-position: 80%;
+  }
+
+  .sec_menu {
+    height: 200px;
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  section .goodsbox {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  section .goodsbox .goods .text .prise {
+    font-size: 14px;
+  }
+  section .goodsbox .goods .text .prise img {
+    width: 16px;
+  }
+  /* //section */
 
   footer {
     padding: 32px;
@@ -486,6 +536,14 @@ footer .note {
   }
   /* //banner */
 
+  section {
+    padding: 60px 40px;
+  }
+  section .goodsbox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* //section */
+
   footer .top .sns {
     margin: 1rem 0;
   }
@@ -515,6 +573,14 @@ footer .note {
   }
   /* //menu */
 
+  section {
+    padding: 32px 16px;
+  }
+  section .goodsbox {
+    gap: 16px;
+  }
+  /* //section */
+
   footer {
     padding: 32px 16px;
   }
@@ -539,4 +605,15 @@ footer .note {
     margin-top: 0.5rem;
   }
   /* //menu */
+
+  .sec_menu {
+    padding: 0 8px;
+  }
+  .sec_menu li {
+    font-size: 12px;
+  }
+  section .goodsbox .goods .text .name {
+    font-size: 12px;
+  }
+  /* //section */
 }
