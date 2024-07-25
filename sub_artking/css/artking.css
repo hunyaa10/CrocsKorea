@@ -108,8 +108,8 @@ menu .closebtn {
 #banner {
   width: 100%;
   height: 100vh;
-  background-image: url(../img/bg_banner.jpg);
-  background-position: left;
+  background-image: url(../img/bg_header.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #00000030;
@@ -121,115 +121,6 @@ menu .closebtn {
   display: none;
 }
 /* //banner */
-
-#inform {
-  padding: 2rem 0;
-  background-color: #f9fcf5;
-}
-#inform h2 {
-  text-align: center;
-  font-size: 24px;
-  font-weight: 700;
-}
-#inform h2 span {
-  font-family: "Ssurround";
-  color: var(--main-color);
-}
-#benefit {
-  padding: 3rem 88px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 400px);
-  justify-content: space-around;
-  gap: 1rem 0;
-}
-#benefit .text {
-  font-size: 24px;
-}
-#benefit .text span {
-  margin-right: 1rem;
-  font-family: "Ssurround";
-  font-size: 16px;
-  text-align: end;
-}
-#contents {
-  padding: 5% 88px;
-  background-color: #fafafa;
-}
-#contents form .formbox {
-  display: flex;
-  justify-content: space-between;
-}
-#contents form .databox .data {
-  font-size: 18px;
-}
-#contents form .databox .data:not(:first-child) {
-  margin-top: 1rem;
-}
-#contents form .databox .data input {
-  width: 200px;
-  height: 30px;
-  margin-left: 1rem;
-  padding: 0;
-  text-align: center;
-  border: none;
-  border-radius: 5px;
-  background-color: #efefef;
-  color: #666;
-  font-family: "SsurroundAir";
-  font-size: 20px;
-}
-#contents form .databox #email_input {
-  width: 400px;
-}
-#contents form .databox #name_input {
-  width: 150px;
-}
-#contents form .agree {
-  width: 50%;
-}
-#contents form .agree .agree-checkbox {
-  font-size: 18px;
-  display: flex;
-  align-items: top;
-}
-#contents form .agree .agree-checkbox #check {
-  margin-right: 1rem;
-  width: 24px;
-  height: 24px;
-}
-#contents form .agree .agree-textbox {
-  padding-left: 2.5rem;
-}
-#contents form .agree .agree-textbox .text1 {
-  margin: 1rem 0 2rem 0;
-}
-#contents form .agree .agree-textbox .txt {
-  display: flex;
-  align-items: center;
-}
-#contents form .agree .agree-textbox .text2 {
-  margin-bottom: 0.5rem;
-}
-#contents form .agree .agree-textbox .txt span {
-  margin-right: 1rem;
-  font-size: 18px;
-}
-#contents form #signbtn {
-  display: block;
-  margin: auto;
-  margin-top: 5%;
-  padding: 1.5rem 3rem;
-  border: none;
-  border-radius: 10px;
-  background-color: var(--main-color);
-  font-family: "Ssurround";
-  font-size: 18px;
-  color: #fff;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-/* //section */
 
 footer {
   width: 100%;
@@ -304,7 +195,6 @@ footer .note {
   display: none;
   z-index: 999;
 }
-/* //topbtn */
 
 /* //////////////////////////////////////////// */
 @media screen and (max-width: 1440px) {
@@ -326,43 +216,6 @@ footer .note {
     font-size: 16px;
   }
   /* //menu */
-
-  #inform h2 {
-    font-size: 18px;
-  }
-  #benefit {
-    grid-template-columns: repeat(2, 350px);
-  }
-  #benefit .text {
-    font-size: 18px;
-  }
-  #benefit .text span {
-    font-size: 14px;
-  }
-  #contents form .databox .data {
-    font-size: 14px;
-  }
-  #contents form .databox .data input {
-    font-size: 16px;
-  }
-  #contents form .agree .agree-checkbox {
-    font-size: 16px;
-  }
-  #contents form .agree .agree-textbox .text1 {
-    font-size: 14px;
-  }
-  #contents form .agree .agree-textbox .txt {
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 14px;
-  }
-  #contents form .agree .agree-textbox .txt span {
-    font-size: 16px;
-  }
-  #contents form #signbtn {
-    font-size: 16px;
-  }
-  /* //section */
 
   footer .top .terms {
     font-size: 16px;
@@ -407,37 +260,6 @@ footer .note {
     margin-top: 0.5rem;
   }
   /* //menu */
-
-  #inform h2 {
-    font-size: 16px;
-  }
-  #benefit {
-    grid-template-columns: repeat(2, 300px);
-  }
-  #benefit .text {
-    font-size: 16px;
-  }
-  #contents {
-    padding: 5% 40px;
-  }
-  #contents form .formbox {
-    flex-direction: column;
-    align-items: center;
-  }
-  #contents form .databox {
-    margin-bottom: 5%;
-  }
-  #contents form .agree {
-    width: 100%;
-  }
-  #contents form .agree .agree-textbox .txt {
-    flex-direction: row;
-    align-items: center;
-  }
-  #contents form #signbtn {
-    font-size: 14px;
-  }
-  /* //section */
 
   footer {
     padding: 40px;
@@ -493,35 +315,6 @@ footer .note {
     font-size: 14px;
   }
   /* //menu */
-
-  #inform {
-    padding: 32px;
-  }
-  #inform h2 {
-    font-size: 14px;
-  }
-  #benefit {
-    width: fit-content;
-    padding: 3rem 32px;
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center;
-  }
-  #contents {
-    padding: 10% 32px;
-  }
-  #contents form .databox {
-    margin-bottom: 10%;
-  }
-  #contents form .databox #email_input {
-    width: 300px;
-  }
-  #contents form .agree .agree-textbox {
-    padding-left: 2rem;
-  }
-  #contents form #signbtn {
-    margin-top: 10%;
-  }
-  /* //section */
 
   footer {
     padding: 32px;
@@ -629,23 +422,6 @@ footer .note {
   }
   /* //banner */
 
-  #contents form .agree .agree-textbox {
-    padding-left: 0;
-  }
-  #contents form .agree .agree-textbox .txt {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  #contents form #signbtn {
-    padding: 1rem 2rem;
-  }
-  #contents form .agree .agree-checkbox #check {
-    margin: 0.5rem 0.5rem 0 0;
-    width: 16px;
-    height: 16px;
-  }
-  /* //section */
-
   footer .top .sns {
     margin: 1rem 0;
   }
@@ -674,36 +450,6 @@ footer .note {
     font-size: 16px;
   }
   /* //menu */
-
-  #inform {
-    padding: 32px 16px;
-  }
-  #inform h2 {
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
-  #inform h2 span {
-    font-family: "SsurroundAir";
-  }
-  #benefit {
-    padding: 10% 16px;
-  }
-  #benefit .text span {
-    font-family: "SsurroundAir";
-    font-weight: 700;
-    color: #000;
-  }
-  #contents {
-    padding: 15% 16px;
-  }
-  #contents form .databox {
-    margin-bottom: 15%;
-  }
-  #contents form .databox .data input {
-    display: block;
-    margin-left: 0;
-  }
-  /* //section */
 
   footer {
     padding: 32px 16px;
