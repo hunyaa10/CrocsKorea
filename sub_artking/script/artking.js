@@ -122,80 +122,43 @@ $(function () {
   let gd5 = $(".gd-prin");
   let gd6 = $(".gd-md");
 
+  list.each(function () {
+    $(this).click(function () {
+      $(this).css({
+        opacity: "1",
+        borderBottom: "3px solid #7fb700",
+      });
+      list.not(this).css({
+        opacity: "0.7",
+        borderBottom: "3px solid transparent",
+      });
+    });
+  });
+
   li1.click(function () {
-    $(this).css({
-      opacity: "1",
-      borderBottom: "3px solid #7fb700",
-    });
-    list.not(this).css({
-      opacity: "0.7",
-      borderBottom: "3px solid transparent",
-    });
     gd1.css({ display: "grid" });
     goods.not(gd1).css({ display: "none" });
   });
   li2.click(function () {
-    $(this).css({
-      opacity: "1",
-      borderBottom: "3px solid #7fb700",
-    });
-    list.not(this).css({
-      opacity: "0.7",
-      borderBottom: "3px solid transparent",
-    });
     gd2.css({ display: "grid" });
     goods.not(gd2).css({ display: "none" });
   });
   li3.click(function () {
-    $(this).css({
-      opacity: "1",
-      borderBottom: "3px solid #7fb700",
-    });
-    list.not(this).css({
-      opacity: "0.7",
-      borderBottom: "3px solid transparent",
-    });
     gd3.css({ display: "grid" });
     goods.not(gd3).css({ display: "none" });
   });
   li4.click(function () {
-    $(this).css({
-      opacity: "1",
-      borderBottom: "3px solid #7fb700",
-    });
-    list.not(this).css({
-      opacity: "0.7",
-      borderBottom: "3px solid transparent",
-    });
     gd4.css({ display: "grid" });
     goods.not(gd4).css({ display: "none" });
   });
   li5.click(function () {
-    $(this).css({
-      opacity: "1",
-      borderBottom: "3px solid #7fb700",
-    });
-    list.not(this).css({
-      opacity: "0.7",
-      borderBottom: "3px solid transparent",
-    });
     gd5.css({ display: "grid" });
     goods.not(gd5).css({ display: "none" });
   });
   li6.click(function () {
-    $(this).css({
-      opacity: "1",
-      borderBottom: "3px solid #7fb700",
-    });
-    list.not(this).css({
-      opacity: "0.7",
-      borderBottom: "3px solid transparent",
-    });
     gd6.css({ display: "grid" });
     goods.not(gd6).css({ display: "none" });
   });
-
-  // section 메뉴 클릭 시 goods 변경
 
   // 탑버튼 효과
   function topbtnScroll() {

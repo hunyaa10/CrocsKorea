@@ -127,14 +127,12 @@ menu .closebtn {
   height: 100px;
   padding: 0 88px;
   border-bottom: 1px solid var(--main-color);
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  justify-items: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 .sec_menu li {
   width: fit-content;
   height: 100px;
-  padding: 0 0.5rem;
   display: flex;
   align-items: center;
   text-align: center;
@@ -287,7 +285,6 @@ footer .note {
 
   .sec_menu li {
     font-size: 14px;
-    line-height: 2;
   }
   section {
     padding: 150px 88px;
@@ -349,9 +346,13 @@ footer .note {
 
   .sec_menu {
     padding: 0 40px;
+    justify-content: space-between;
   }
   section {
-    padding: 100px 40px;
+    padding: 80px 40px;
+  }
+  section .goodsbox {
+    gap: 60px;
   }
   /* //section */
 
@@ -394,11 +395,6 @@ footer .note {
     background-color: #00000070;
   }
   /* //menu */
-
-  section .goodsbox {
-    gap: 40px;
-  }
-  /* //section */
 }
 
 @media screen and (max-width: 768px) {
@@ -411,13 +407,19 @@ footer .note {
   /* //menu */
 
   #banner {
-    background-position: 80%;
+    background-position: 70%;
   }
+  /* //banner */
 
   .sec_menu {
     height: 200px;
     padding: 0;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+  section {
+    padding: 40px;
   }
   section .goodsbox {
     grid-template-columns: repeat(3, 1fr);
@@ -536,11 +538,15 @@ footer .note {
   }
   /* //banner */
 
-  section {
-    padding: 60px 40px;
-  }
   section .goodsbox {
     grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  section .goodsbox .goods .text .name {
+    font-size: 16px;
+  }
+  section .goodsbox .goods .text .prise {
+    font-size: 16px;
   }
   /* //section */
 
@@ -573,6 +579,9 @@ footer .note {
   }
   /* //menu */
 
+  .sec_menu {
+    padding: 0 8px;
+  }
   section {
     padding: 32px 16px;
   }
@@ -606,14 +615,11 @@ footer .note {
   }
   /* //menu */
 
-  .sec_menu {
-    padding: 0 8px;
-  }
   .sec_menu li {
     font-size: 12px;
   }
   section .goodsbox .goods .text .name {
-    font-size: 12px;
+    font-size: 14px;
   }
   /* //section */
 }
