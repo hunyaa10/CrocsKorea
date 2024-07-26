@@ -43,51 +43,40 @@ $(function () {
 
   // main메뉴 클릭 시 sub메뉴 슬라이드다운
   function menuClick() {
+    let mainMenu = $(".main");
     let m1 = $(".main1");
     let m2 = $(".main2");
     let m3 = $(".main3");
     let m4 = $(".main4");
     let m5 = $(".main5");
+    let mains = [m1, m2, m3, m4, m5];
+    let subMenu = $(".sub");
     let s1 = $(".sub1");
     let s2 = $(".sub2");
     let s3 = $(".sub3");
     let s4 = $(".sub4");
     let s5 = $(".sub5");
+    let subs = [s1, s2, s3, s4, s5];
 
-    $(m1).click(function () {
-      $(this).css({ color: "#7fb700" });
-      $(".main").not(this).css({ color: "#fff" });
-      s1.slideDown();
-      $(".sub").not(s1).slideUp();
+    mainMenu.each(function () {
+      $(this).click(function () {
+        $(this).css("color", "#7fb700");
+        mainMenu.not(this).css("color", "#fff");
+      });
     });
-    $(m2).click(function () {
-      $(this).css({ color: "#7fb700" });
-      $(".main").not(this).css({ color: "#fff" });
-      s2.slideDown();
-      $(".sub").not(s2).slideUp();
-    });
-    $(m3).click(function () {
-      $(this).css({ color: "#7fb700" });
-      $(".main").not(this).css({ color: "#fff" });
-      s3.slideDown();
-      $(".sub").not(s3).slideUp();
-    });
-    $(m4).click(function () {
-      $(this).css({ color: "#7fb700" });
-      $(".main").not(this).css({ color: "#fff" });
-      s4.slideDown();
-      $(".sub").not(s4).slideUp();
-    });
-    $(m5).click(function () {
-      $(this).css({ color: "#7fb700" });
-      $(".main").not(this).css({ color: "#fff" });
-      s5.slideDown();
-      $(".sub").not(s5).slideUp();
+
+    mains.forEach(function (main, i) {
+      main.click(function () {
+        subs.forEach(function (sub) {
+          sub.slideUp();
+        });
+        subs[i].slideDown();
+      });
     });
 
     $(window).scroll(function () {
-      $(".sub").slideUp();
-      $(".main").css({ color: "#fff" });
+      subMenu.slideUp();
+      mainMenu.css("color", "#fff");
     });
   }
   menuClick();
@@ -114,13 +103,14 @@ $(function () {
   let li4 = $(".li4");
   let li5 = $(".li5");
   let li6 = $(".li6");
-  let goods = $(".goodsbox");
+  let lis = [li1, li2, li3, li4, li5, li6];
   let gd1 = $(".gd-nyc");
   let gd2 = $(".gd-line");
   let gd3 = $(".gd-toy");
   let gd4 = $(".gd-spbob");
   let gd5 = $(".gd-prin");
   let gd6 = $(".gd-md");
+  let gds = [gd1, gd2, gd3, gd4, gd5, gd6];
 
   list.each(function () {
     $(this).click(function () {
@@ -135,29 +125,13 @@ $(function () {
     });
   });
 
-  li1.click(function () {
-    gd1.css({ display: "grid" });
-    goods.not(gd1).css({ display: "none" });
-  });
-  li2.click(function () {
-    gd2.css({ display: "grid" });
-    goods.not(gd2).css({ display: "none" });
-  });
-  li3.click(function () {
-    gd3.css({ display: "grid" });
-    goods.not(gd3).css({ display: "none" });
-  });
-  li4.click(function () {
-    gd4.css({ display: "grid" });
-    goods.not(gd4).css({ display: "none" });
-  });
-  li5.click(function () {
-    gd5.css({ display: "grid" });
-    goods.not(gd5).css({ display: "none" });
-  });
-  li6.click(function () {
-    gd6.css({ display: "grid" });
-    goods.not(gd6).css({ display: "none" });
+  lis.forEach(function (li, i) {
+    li.click(function () {
+      gds.forEach(function (gd) {
+        gd.css("display", "none");
+      });
+      gds[i].css("display", "grid");
+    });
   });
 
   // 탑버튼 효과
@@ -165,9 +139,9 @@ $(function () {
     let windowT = $(window).scrollTop();
     let top = $(".topbtn");
     if (windowT > 800) {
-      top.css({ display: "block" });
+      top.css("display", "block");
     } else {
-      top.css({ display: "none" });
+      top.css("display", "none");
     }
   }
   $(window).scroll(function () {
