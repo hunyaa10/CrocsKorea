@@ -116,9 +116,11 @@ $(function () {
   });
 
   // 가입버튼클릭 시 알림창 뜨게
-  let sign = $("#signbtn");
-  sign.click(function () {
-    alert("크록스클럽 가입을 축하드립니다!");
+  let form = $("#sign-form");
+  form.submit(function (e) {
+    e.preventDefault();
+    alert("크록스클럽가입을 축하드립니다!");
+    this.submit();
   });
 
   ///////////////////////////////////
