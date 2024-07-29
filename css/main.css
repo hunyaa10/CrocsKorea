@@ -104,6 +104,9 @@ menu .sub li {
 menu .sub li:hover {
   background-color: #d0d9bb43;
 }
+menu .sub li span {
+  font-size: 16px;
+}
 menu .closebtn {
   display: none;
 }
@@ -645,6 +648,9 @@ footer .note {
   }
   menu .sub li {
     font-size: 16px;
+  }
+  menu .sub li span {
+    font-size: 12px;
   }
   /* //menu */
 
