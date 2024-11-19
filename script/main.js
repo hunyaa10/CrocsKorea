@@ -43,51 +43,40 @@ $(function () {
 
   // main메뉴 클릭 시 sub메뉴 슬라이드다운
   function menuClick() {
+    let mainMenu = $(".main");
     let m1 = $(".main1");
     let m2 = $(".main2");
     let m3 = $(".main3");
     let m4 = $(".main4");
     let m5 = $(".main5");
+    let mains = [m1, m2, m3, m4, m5];
+    let subMenu = $(".sub");
     let s1 = $(".sub1");
     let s2 = $(".sub2");
     let s3 = $(".sub3");
     let s4 = $(".sub4");
     let s5 = $(".sub5");
+    let subs = [s1, s2, s3, s4, s5];
 
-    $(m1).click(function () {
-      $(this).css({ color: "#7fb700" });
-      $(".main").not(this).css({ color: "#fff" });
-      s1.slideDown();
-      $(".sub").not(s1).slideUp();
+    mainMenu.each(function () {
+      $(this).click(function () {
+        $(this).css("color", "#7fb700");
+        mainMenu.not(this).css("color", "#fff");
+      });
     });
-    $(m2).click(function () {
-      $(this).css({ color: "#7fb700" });
-      $(".main").not(this).css({ color: "#fff" });
-      s2.slideDown();
-      $(".sub").not(s2).slideUp();
-    });
-    $(m3).click(function () {
-      $(this).css({ color: "#7fb700" });
-      $(".main").not(this).css({ color: "#fff" });
-      s3.slideDown();
-      $(".sub").not(s3).slideUp();
-    });
-    $(m4).click(function () {
-      $(this).css({ color: "#7fb700" });
-      $(".main").not(this).css({ color: "#fff" });
-      s4.slideDown();
-      $(".sub").not(s4).slideUp();
-    });
-    $(m5).click(function () {
-      $(this).css({ color: "#7fb700" });
-      $(".main").not(this).css({ color: "#fff" });
-      s5.slideDown();
-      $(".sub").not(s5).slideUp();
+
+    mains.forEach(function (main, i) {
+      main.click(function () {
+        subs.forEach(function (sub) {
+          sub.slideUp();
+        });
+        subs[i].slideDown();
+      });
     });
 
     $(window).scroll(function () {
-      $(".sub").slideUp();
-      $(".main").css({ color: "#fff" });
+      subMenu.slideUp();
+      mainMenu.css("color", "#fff");
     });
   }
   menuClick();
@@ -209,12 +198,6 @@ $(function () {
     });
   }
 
-  // function windowResize() {
-  //   $(window).resize(function () {
-  //     document.location.reload();
-  //   });
-  // }
-
   function hoverAction() {
     if (windowWidth > 1200) {
       sec02_hoverEvent();
@@ -223,6 +206,16 @@ $(function () {
     }
   }
   hoverAction();
+
+  // 위도우창크기 변화 시 새로고침
+  function windowResize() {
+    $(window).resize(function () {
+      document.location.reload();
+    });
+  }
+  if (windowWidth > 450) {
+    windowResize();
+  }
 
   // sec02 숫자 or 화살표 클릭 시 아이템 슬라이드
   var slide = 2;

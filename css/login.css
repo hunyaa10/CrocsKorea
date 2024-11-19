@@ -1,0 +1,182 @@
+@import url(./reset.css);
+
+@font-face {
+  font-family: "SsurroundAir";
+  src: url(../font/Cafe24SsurroundAir-v1.1.ttf);
+}
+@font-face {
+  font-family: "Ssurround";
+  src: url(../font/Cafe24Ssurround-v2.0.ttf);
+}
+
+:root {
+  --main-color: #7fb700;
+}
+
+body {
+  height: 90vh;
+}
+
+#loginbox {
+  width: 35%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  margin-bottom: 10%;
+}
+header h1 {
+  width: fit-content;
+  margin: auto;
+}
+/* //header */
+
+main {
+  width: 100%;
+  padding: 40px;
+  border: 1px solid var(--main-color);
+  border-radius: 20px;
+  font-size: 18px;
+}
+main .id_box {
+  margin-bottom: 1rem;
+}
+main label {
+  display: block;
+  margin-bottom: 1rem;
+}
+main input {
+  width: 100%;
+  height: 50px;
+  padding-left: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  font-size: 18px;
+}
+main button {
+  margin: 3rem 0;
+  width: 100%;
+  height: 80px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  font-family: "Ssurround";
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+}
+main .find_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+/* //main */
+
+footer {
+  width: 100%;
+}
+footer .terms {
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .bottom h2 {
+  width: 100px;
+}
+footer .bottom a {
+  font-size: 18px;
+  font-weight: 700;
+}
+/* //footer */
+
+/* /////////////////////////////////////// */
+@media screen and (max-width: 1440px) {
+  #loginbox {
+    width: 30%;
+  }
+  header h1 {
+    width: 200px;
+  }
+  main {
+    font-size: 14px;
+  }
+  main input {
+    height: 40px;
+    font-size: 16px;
+  }
+  main button {
+    height: 50px;
+    font-size: 16px;
+  }
+  main .find_box {
+    font-size: 14px;
+  }
+  footer .terms {
+    font-size: 12px;
+  }
+  footer .bottom h2 {
+    width: 80px;
+  }
+  footer .bottom a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #loginbox {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #loginbox {
+    width: 60%;
+  }
+  footer .bottom h2 {
+    width: 60px;
+  }
+  footer .bottom a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 575px) {
+  body {
+    padding: 0 88px;
+  }
+  #loginbox {
+    width: 100%;
+  }
+  main {
+    padding: 24px;
+  }
+}
+@media screen and (max-width: 450px) {
+  body {
+    padding: 24px;
+  }
+  header h1 {
+    width: 150px;
+  }
+  main {
+    padding: 24px 16px;
+  }
+  main label {
+    margin-bottom: 0.5rem;
+  }
+  main button {
+    margin: 2rem 0;
+  }
+  main .find_box {
+    font-size: 12px;
+  }
+}

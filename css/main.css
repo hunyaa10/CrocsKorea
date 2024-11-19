@@ -63,8 +63,8 @@ header .header_menu ul li:hover {
 header .header_menu h1 .logo-black {
   display: none;
 }
-header button {
-  opacity: 0;
+header .menu_btn_box,
+header .login_btn_box {
   display: none;
 }
 /* //header */
@@ -103,6 +103,9 @@ menu .sub li {
 }
 menu .sub li:hover {
   background-color: #d0d9bb43;
+}
+menu .sub li span {
+  font-size: 16px;
 }
 menu .closebtn {
   display: none;
@@ -646,6 +649,9 @@ footer .note {
   menu .sub li {
     font-size: 16px;
   }
+  menu .sub li span {
+    font-size: 12px;
+  }
   /* //menu */
 
   section {
@@ -1121,12 +1127,13 @@ footer .note {
   header .header_menu ul {
     display: none;
   }
-  header button {
-    opacity: 1;
+  header .menu_btn_box,
+  header .login_btn_box {
+    display: flex;
   }
-  header .menu-white,
-  header .login-white {
-    display: block;
+  header .menu_btn_box .menu-black,
+  header .login_btn_box .login-black {
+    display: none;
   }
   /* //header */
 
@@ -1158,24 +1165,23 @@ footer .note {
 
   #banner {
     overflow: hidden;
+    position: relative;
   }
   #banner .banner_text {
     display: block;
-    transform: rotate(-90deg);
-    position: relative;
-    top: 50%;
-    left: 20%;
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 5%;
+    right: 1rem;
   }
   #banner .banner_text h2 {
+    writing-mode: vertical-rl;
     line-height: 1;
     text-transform: uppercase;
     font-family: "TitanOne";
-    font-size: 25vw;
+    font-size: 19vw;
     color: #fff;
     opacity: 0.2;
-  }
-  #banner .banner_text .text-k {
-    margin-left: 100px;
   }
   /* //banner */
 
@@ -1336,14 +1342,6 @@ footer .note {
   }
   /* //menu */
 
-  #banner .banner_text {
-    top: 55%;
-  }
-  #banner .banner_text h2 {
-    font-size: 28vw;
-  }
-  /* //banner */
-
   section {
     padding: 100px 16px;
   }
@@ -1401,7 +1399,7 @@ footer .note {
     padding: 40px 16px;
   }
   #sub_banner .text .bigT {
-    font-size: 18px;
+    font-size: 16px;
   }
   #sub_banner .text a img {
     margin-left: 0.5rem;
@@ -1457,9 +1455,4 @@ footer .note {
     margin-top: 0.5rem;
   }
   /* //menu */
-
-  #sub_banner .text .bigT {
-    font-size: 16px;
-  }
-  /* //sub_banner */
 }
