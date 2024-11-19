@@ -10,4 +10,4 @@
 ## 🔗작업링크
 
 - 피그마링크 : https://www.figma.com/design/YD9BVmquqCHAWH7wZht7yf/Untitled?node-id=0-1&node-type=canvas&t=CL0dG5qejp0Y7zCa-0
-- 배포링크 : 
+- 배포링크 : https://crocs-korea.vercel.app/
